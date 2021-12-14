@@ -1,0 +1,21 @@
+{
+    "extends": ["react-app", "prettier"], //lệnh này để extend thêm cấu hình mặc định từ prettier, react-app
+    "plugins": ["react", "prettier"], //và sử dụng môi trường prettier cùng với React để run
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+                "arrowParens": "avoid",
+                "semi": false,
+                "trailingComma": "none",
+                "endOfLine": "auto",
+                "tabWidth": 4,
+                "useTabs": false,
+                "singleQuote": true,
+                "printWidth": 120,
+                "jsxSingleQuote": false
+            }
+        ],
+        "no-console": "warn"
+    }
+}
